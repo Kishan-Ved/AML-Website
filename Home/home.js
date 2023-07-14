@@ -2,7 +2,7 @@ let aml = document.getElementById('aml');
 let waw = document.getElementById('waw');
 let L1 = document.querySelectorAll('.L1');
 let L2 = document.querySelectorAll('.L2');
-let spans = document.querySelectorAll('.waw-span');
+let span = document.querySelector('.waw-span');
 
 window.onbeforeunload = function () {
     window.scrollTo(0,0);
@@ -26,9 +26,11 @@ window.addEventListener("scroll", () => {
         waw.style.opacity = 1 - s3;
     }
 
+    if (scroll < 650) {
+        span.style.height = 100 + '%';
+    }
+
     if (scroll > 650 && scroll < 1250) {
-        spans.forEach(span => {
-            span.style.height = 0 + '%';
-        });
+        span.style.height = 0 + '%';
     }
 });
