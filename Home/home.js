@@ -8,6 +8,7 @@ let waw_cont = document.getElementById('waw-container');
 let span = document.querySelector('.waw-span');
 let ot = document.getElementById('ot');
 let tt = document.querySelectorAll('.title');
+let unit = document.getElementById('unit')
 const H = window.innerHeight
 
 window.onbeforeunload = function () {
@@ -20,7 +21,7 @@ window.addEventListener("scroll", () => {
     
     if (scroll < 650) {
         var s1 = 1 - scroll/1000;
-        var s2 = 1 - scroll/2000;
+        var s2 = 1 - scroll/1500;
         var s3 = 1 - scroll/550;
         L1.forEach(l => {
             l.style.transform = 'scale(' + s1 + ')';
@@ -74,9 +75,11 @@ window.addEventListener("scroll", () => {
         ot.style.opacity = 1;
     }
     
-    if (scroll > 1800 &&scroll < (2000 + 2.1*H)) {
+    if (scroll > 1800 &&scroll < (2200 + 3.1*H)) {
         ot.style.opacity = 0;
-        let i = Math.floor((scroll - 1800)/H);
+        var top = (1 - 2*(scroll - 1800)/(1.5*H))*100; 
+        unit.style.top = top + 'vh';
+        let i = Math.floor((scroll - 1800)/(1.5*H));
         tt[i].classList.remove('deactive');
         tt[i].classList.add('active');
         if (i > 0) {
