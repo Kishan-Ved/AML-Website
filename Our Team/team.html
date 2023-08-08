@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poppins;
+            
+        }
+
+        .heading{
+            text-align: center;
+            background-color: #0c52a1;
+        }
+        .aml{
+            width: 220px;
+            height: 220px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .aml:hover {
+            filter: grayscale(100%);
+}
+        .home-container {
+            width: 100%;
+            /* height: 40vh; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0c52a1;
+        }
+        .profile-card {
+            position: relative;
+            width: 220px;
+            height: 220px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 50%;
+            box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+            transition: all .4s;
+            margin: 40px 20px;
+        }
+        .profile-card:hover {
+            border-radius: 10px;
+            height: 260px;
+        }
+        .profile-card .img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .profile-card:hover img {
+            border-radius: 10px;
+            transform: translateY(-70px);
+        }
+        .img img {
+            object-fit: fill;
+            width: 100%;
+            border-radius: 50%;
+            transition: all .4s;
+            z-index: 99;
+        }
+        .caption {
+            margin-top: -10px;
+            text-align: center;
+            transform: translateY(-90px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all .5s;
+        }
+        .profile-card:hover .caption {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .caption h3 {
+            font-size: 21px;
+            color: #0c52a1;
+            font-weight: 600;
+        }
+        .caption p {
+            font-size: 15px;
+            font-weight: 500;
+            margin: 2px 0 12px 0;
+        }
+        .caption .social-links i {
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+            color: #333;
+            transition: all .4s;
+        }
+        .caption .social-links i:hover {
+            color: #0c52a1;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1000px) {
+            .home-container {
+                flex-wrap: wrap;
+            }
+            .profile-card {
+                margin: 20px 0;
+            }
+            .aml{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading">CORE COMMITTEE</h2>
+    <div class="home-container">
+       
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://media.licdn.com/dms/image/C4D03AQH6ZSuuPkMfLA/profile-displayphoto-shrink_400_400/0/1663915059052?e=1695254400&v=beta&t=PFlzpyS5LcRK5eaJtMsHO3fVMwNQiTyqK7tkUGyPRMs">
+            </div>
+            <div class="caption">
+                <h3>Guntas Saran</h3>
+                <p>Design and Finance Core</p>
+                
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/guntas-singh-saran-2b8811179/ " target="_blank"><a href="https://www.linkedin.com/in/guntas-singh-saran-2b8811179/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a></a>
+                    
+                    <a href="mailto:guntassingh.saran@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                    <h6>6264938418</h6>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://media.licdn.com/dms/image/C5603AQHq4yHiox1q2Q/profile-displayphoto-shrink_800_800/0/1589438714119?e=2147483647&v=beta&t=zEqmVDBm4fxFCV0Pnt8UPKwJVjJcEHGJWb2Z8DElrMo">
+            </div>
+            <div class="caption">
+                <h3>Debojit Das</h3>
+                <p>Sponsorship and C & S Core</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/debojitdas842/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:debojit.das@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="aml img">
+            <img src="https://drive.google.com/uc?export=view&id=1HY3G8nZlrxOuNq38dhpEv2QhjZURXtSG">
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://media.licdn.com/dms/image/D4E03AQHY_aLy0yJeLQ/profile-displayphoto-shrink_800_800/0/1668394028852?e=2147483647&v=beta&t=-TCqmE-IUIKVFy3ckGbj7xN4Po1p6CnshGLNLM2y1rU">
+            </div>
+            <div class="caption">
+                <h3>Harsh Jain</h3>
+                <p>Events Core</p>
+                <p></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/harsh-jain-449a19255/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:harsh.jain@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://img.freepik.com/premium-photo/handsome-man-positive-male-portrait-masculine_279525-15451.jpg?size=626&ext=jpg&ga=GA1.1.1590143670.1681520467&semt=ais">
+            </div>
+            <div class="caption">
+                <h3>Agastya</h3>
+                <p>Marketing and Tech Expo Core</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/agastya-narayana/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:mangalampalli.narayana@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <h2 class="heading">COORDINATORS</h2>
+    <div class="home-container">
+        <div class="profile-card">
+            <div class="img">
+                <img src="">
+            </div>
+            <div class="caption">
+                <h3>Suteekshna Mishra</h3>
+                <p>Events</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/suteekshna-mishra-14b15b253/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:suteekshna.mishra@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://img.freepik.com/premium-photo/handsome-man-positive-male-portrait-masculine_279525-15451.jpg?size=626&ext=jpg&ga=GA1.1.1590143670.1681520467&semt=ais">
+            </div>
+            <div class="caption">
+                <h3>Farhan Obaid</h3>
+                <p>Event Management</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/farhan-obaid-19b289262/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:farhan.obaid@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://media.licdn.com/dms/image/D4D03AQHP-dp-GuUTfg/profile-displayphoto-shrink_400_400/0/1686497079426?e=1695254400&v=beta&t=jSBFbrpgT7tsdqae4NecKxGbZjtoPkTQV21k_lX_bS8">
+            </div>
+            <div class="caption">
+                <h3>Aaditya Roy</h3>
+                <p>Marketing</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/aaditya-roy-279485233/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:aaditya.roy@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://media.licdn.com/dms/image/D4D03AQFlpOCBn7IzeA/profile-displayphoto-shrink_800_800/0/1687074281229?e=2147483647&v=beta&t=YQ-mXWG5ggj5XRlqRjsQ7YphT7BsU3zFrf7ieKIYBIU">
+            </div>
+            <div class="caption">
+                <h3>Kavya Gotecha</h3>
+                <p>Marketing</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kavya-gotecha-4a7a98250/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:kavya.gotecha@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://media.licdn.com/dms/image/D4D03AQHdXOAraNlNxQ/profile-displayphoto-shrink_800_800/0/1671989348496?e=2147483647&v=beta&t=vP9nkKjbyI4DiyKMGJijfNMN8-ADEWqES1QqSEgsziw">
+            </div>
+            <div class="caption">
+                <h3>Dhruvi Sisodiya</h3>
+                <p>Design</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/dhruvi-sisodiya-1188ab251/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:dhruvi.sisodiya@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="home-container">
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://media.licdn.com/dms/image/D4D03AQHP-dp-GuUTfg/profile-displayphoto-shrink_400_400/0/1686497079426?e=1695254400&v=beta&t=jSBFbrpgT7tsdqae4NecKxGbZjtoPkTQV21k_lX_bS8">
+        </div>
+        <div class="caption">
+            <h3>Nishi Shah</h3>
+            <p>Sponsorship</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/nishi-shah-466a4424b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:nishi.shah@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://media.licdn.com/dms/image/D4E03AQEAvyj7x7IbzA/profile-displayphoto-shrink_800_800/0/1683809944243?e=2147483647&v=beta&t=sVq3QRuf_6Oeka6aihy5uLJgNonimCK_Yabke6jSymA">
+        </div>
+        <div class="caption">
+            <h3>Hrriday V. Ruparel</h3>
+            <p>Sponsorship</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/hrriday-ruparel-76b019276/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:hrriday.ruparel@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://img.freepik.com/premium-photo/handsome-man-positive-male-portrait-masculine_279525-15451.jpg?size=626&ext=jpg&ga=GA1.1.1590143670.1681520467&semt=ais">
+        </div>
+        <div class="caption">
+            <h3>Aarav Shah</h3>
+            <p>Tech Expo </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aarav-shah-475122259/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:aarav.shah@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://media.licdn.com/dms/image/D4D03AQFeDpFyuLYpQA/profile-displayphoto-shrink_800_800/0/1666026829261?e=2147483647&v=beta&t=-JzKqiteztXvvnVANq1TL_GZ_GxdKXWr3WRPtQzjHl8">
+        </div>
+        <div class="caption">
+            <h3>Darshan Zala</h3>
+            <p>Conclave & Symposium Coordinator</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/darshanzala/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:darshan.zala@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+<h2 class="heading">WEB DEVELOPMENT & DESIGN TEAM</h2>
+<div class="home-container">
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://media.licdn.com/dms/image/D4D03AQFi6HCEW6hUVA/profile-displayphoto-shrink_400_400/0/1672486770105?e=1695254400&v=beta&t=u3nWAkOGmT2hLBDMq4ESYS_oomb7yGwhhfcWpmu_nHU">
+        </div>
+        <div class="caption">
+            <h3>Dipesh Patidar</h3>
+            <p>Developer</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/dipesh-patidar-586133256/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:dipesh.patidar@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://media.licdn.com/dms/image/D4D03AQFvotiWdujogg/profile-displayphoto-shrink_800_800/0/1688074089131?e=2147483647&v=beta&t=bqZ4S_X7LRE5lHZaOo1YGuiwxFebZPr2eDTKcUuWF4A">
+        </div>
+        <div class="caption">
+            <h3>Parth Govale</h3>
+            <p>Developer</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/parth-govale-a65120277/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:parth.govale@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://img.freepik.com/premium-photo/handsome-man-positive-male-portrait-masculine_279525-15451.jpg?size=626&ext=jpg&ga=GA1.1.1590143670.1681520467&semt=ais">
+        </div>
+        <div class="caption">
+            <h3>Vraj Shah</h3>
+            <p>Developer</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/vraj-shah-6a634a254/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:vraj.shah@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://img.freepik.com/premium-photo/handsome-man-positive-male-portrait-masculine_279525-15451.jpg?size=626&ext=jpg&ga=GA1.1.1590143670.1681520467&semt=ais">
+        </div>
+        <div class="caption">
+            <h3>Pranav Joshi</h3>
+            <p>Developer</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/guntas-singh-saran-2b8811179/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:pranav.joshi@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://media.licdn.com/dms/image/D4E03AQHR_2OPO5q8lA/profile-displayphoto-shrink_800_800/0/1669841741186?e=2147483647&v=beta&t=4VO9-19y9QQCzB3UbdFYNgARy35Y_8eisXC5zUcBX5Y">
+        </div>
+        <div class="caption">
+            <h3>Aashmun Gupta</h3>
+            <p>Developer</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aashmun-g-73bba6258/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:aashmun.gupta@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="home-container">
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://media.licdn.com/dms/image/D4D03AQFi6HCEW6hUVA/profile-displayphoto-shrink_400_400/0/1672486770105?e=1695254400&v=beta&t=u3nWAkOGmT2hLBDMq4ESYS_oomb7yGwhhfcWpmu_nHU">
+        </div>
+        <div class="caption">
+            <h3>Kishan Ved</h3>
+            <p>Developer</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kishan-ved-506140259/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:kishan.ved@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="https://img.freepik.com/premium-photo/handsome-man-positive-male-portrait-masculine_279525-15451.jpg?size=626&ext=jpg&ga=GA1.1.1590143670.1681520467&semt=ais">
+        </div>
+        <div class="caption">
+            <h3>Jaidev Khalane</h3>
+            <p>Developer</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/guntas-singh-saran-2b8811179/ " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:jaidev.khalane@iitgn.ac.in" target="_blank"><i class="fa-brands fa-message"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
