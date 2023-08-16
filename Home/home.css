@@ -5,7 +5,7 @@
 
 body {
     background-color: black;
-    height: 1000vh;
+    height: 1750vh;
 }
 
 .container {
@@ -157,7 +157,7 @@ body {
     position: fixed;
     top: -5%;
     right: -50%;
-    transition: 0.5s ease-in-out;
+    transition: 0.75s ease-in-out;
 }
 
 .drone.active{
@@ -170,7 +170,7 @@ body {
     position: fixed;
     bottom: -5%;
     left: -25%;
-    transition: 0.5s ease-in-out;
+    transition: 0.75s ease-in-out;
 }
 
 .robo.active {
@@ -255,6 +255,43 @@ body {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+}
+
+/* Local Events */
+.event-unit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0px;
+    top: 100vh;
+    bottom: -100vh;
+}
+
+.event {
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5vh;
+    border: 4px solid white;
+}
+
+.event-name{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6.5rem;
+    margin-left: 5vw;
+}
+
+.date{
+    width: 30%;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6.5rem;
+    margin-right: 5vw;
+    text-align: right;
 }
 
 /* Keyframes */
