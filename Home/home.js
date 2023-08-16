@@ -8,8 +8,10 @@ let waw_cont = document.getElementById('waw-container');
 let span = document.querySelector('.waw-span');
 let ot = document.getElementById('ot');
 let tt = document.querySelectorAll('.title');
-let unit = document.getElementById('unit')
-const H = window.innerHeight
+let unit = document.getElementById('unit');
+let event_unit = document.querySelectorAll('.event-unit');
+const H = window.innerHeight;
+const h1 = 2400 + 3.1*H;
 
 window.onbeforeunload = function () {
     window.scrollTo(0,0);
@@ -75,18 +77,18 @@ window.addEventListener("scroll", () => {
         ot.style.opacity = 1;
     }
     
-    if (scroll > 1800 &&scroll < (2200 + 3.1*H)) {
+    if (scroll > 2000 &&scroll < h1) {
         ot.style.opacity = 0;
-        var top = (1 - 2*(scroll - 1800)/(1.5*H))*100; 
+        var top = (1 - 2*(scroll - 2000)/(1.5*H))*100; 
         unit.style.top = top + 'vh';
-        let i = Math.floor((scroll - 1800)/(1.5*H));
+        let i = Math.floor((scroll - 2000)/(1.5*H));
         tt[i].classList.remove('deactive');
         tt[i].classList.add('active');
         if (i > 0) {
             tt[i - 1].classList.add('deactive');
             tt[i - 1].classList.remove('active');
         }
-        if (i < 3) {
+        if (i < 2) {
             tt[i + 1].classList.add('deactive');
             tt[i + 1].classList.remove('active');
         }
@@ -96,5 +98,18 @@ window.addEventListener("scroll", () => {
         tt[0].classList.remove('active');
         tt[2].classList.add('deactive');
         tt[2].classList.remove('active');
+    }
+
+    if (h1 - 600 < scroll) {
+        let j = Math.floor((scroll + 400 - h1)/H);
+        var top = (1 - ((scroll + 400 - h1)%H)/H)*100;
+        if (-1 < j && j < 9) {
+            event_unit[j].style.top = top + 'vh';
+            event_unit[j].style.bottom = -top + 'vh';
+        }
+        if (0 < j && j < 10) {
+            event_unit[j - 1].style.top = 0 + 'vh';
+            event_unit[j - 1].style.bottom = 0 + 'vh';
+        }
     }
 });
