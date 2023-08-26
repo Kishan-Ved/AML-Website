@@ -132,6 +132,11 @@ window.addEventListener("scroll", () => {
             element.style.top = 0 + 'vh';
             element.style.bottom = 0 + 'vh';
         }
+        for (let i = j + 1; i < 9; i++) {
+            const element = event_unit[i];
+            element.style.top = 100 + 'vh';
+            element.style.bottom = -100 + 'vh';
+        }
     }
     if (scroll < (h1 - 600)) {
         event_unit.forEach(eu => {
